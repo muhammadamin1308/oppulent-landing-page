@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/diamond.png">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>The Opulent on the First</p>
+            </div>
+
+            <div class="burger" onclick="toggleMenu()">&#9776;</div>
+
+            <ul class="nav-links">
+                <li><a href="#accommodations">Properties</a></li>
+                <li><a href="#experiences">Services</a></li>
+                <li><a href="#lux-defined">Benefits</a></li>
+            </ul>
+            <div class="nav-btn-cont">
+                <button class=" btn nav-btn"> <a href="#get-in-touch">Contact Now</a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-side-img">
+                <img class="side-img" src="images/hero-side-img.jpg" alt="">
+            </div>
+            <div class="hero-text">
+                <h1>Luxury <br> Escape</h1>
+                <p>Discover The Opulent</p>
+                <button class="btn hero-btn"><a href="mailto:sharifjanovmukhammadamin@gmail.com">Guest
+                        Stories</a></button>
+            </div>
+            <div class="hero-bottom-img">
+                <img src="images/hero-main-img.avif" alt="">
+            </div>
+        </section>
+        <section id="accommodations" class="accommodations">
+            <h2 style="padding: 30px 20px 0px;">Accommodations</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card"><img src="images/slider-1.jpg" class="card-img" alt="slider img 1"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card"><img src="images/slider-2.jpg" class="card-img" alt="slider img 2"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card"><img src="images/slider-3.jpg" class="card-img" alt="slider img 3"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card"><img src="images/slider-4.jpg" class="card-img" alt="slider img 4"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card"><img src="images/slider-5.jpg" class="card-img" alt="slider img 5"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="imageModal" class="modal">
+                <span class="modal-close">&times;</span>
+                <img class="modal-content" id="modalImage" />
+            </div>
+        </section>
+        <section id="experiences" class="experiences">
+            <h2 style="padding: 20px 0;">Experiences</h2>
+            <div class="exp-cont">
+                <div class="exp-row">
+                    <div class="exp-col-3">
+                        <h3>Lodging</h3>
+                    </div>
+                    <div class="exp-col-3">
+                        <p>Find Your Ideal Room</p>
+                    </div>
+                    <div class="exp-desc">
+                        <p>
+                            Immerse yourself in luxury with our curated selection of rooms and suites. Whether you seek
+                            a
+                            cozy haven, a family retreat, or an opulent experience, we'll guide you every step of the
+                            way.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-row">
+                    <div class="exp-col-3">
+                        <h3>Dining</h3>
+                    </div>
+                    <div class="exp-col-3">
+                        <p>Indulge Your Senses</p>
+                    </div>
+                    <div class="exp-desc">
+                        <p>
+                            Savor a symphony of flavors at our gourmet dining venues. Let us handle the details to
+                            ensure you experience culinary excellence and unparalleled dining satisfaction.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-row">
+                    <div class="exp-col-3">
+                        <h3>Spa</h3>
+                    </div>
+                    <div class="exp-col-3">
+                        <p>Relaxation Redefined</p>
+                    </div>
+                    <div class="exp-desc">
+                        <p>
+                            Immerse yourself in a world of tranquility with our luxurious spa services. From
+                            rejuvenating massages to revitalizing treatments, we'll help you find the perfect escape for
+                            relaxation.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-row">
+                    <div class="exp-col-3">
+                        <h3>Events</h3>
+                    </div>
+                    <div class="exp-col-3">
+                        <p>Create Unforgettable Moments</p>
+                    </div>
+                    <div class="exp-desc">
+                        <p>
+                            Elevate your gatherings with our unmatched event spaces and expert event planning services.
+                            Let us help you craft extraordinary experiences and lasting memories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 98%; display: flex; justify-content: end;">
+                <button class="exp-btn">Discover</button>
+            </div>
+        </section>
+        <section id="lux-defined" class="luxury-defined">
+            <h2>Luxury Defined</h2>
+            <div class="lux-cont">
+                <div class="lux-col">
+                    <img src="images/diamond.png" class="lux-img" alt="">
+                    <h4 class="lux-text">Unrivaled Elegance</h4>
+                </div>
+                <div class="lux-col">
+                    <img src="images/diamond.png" class="lux-img" alt="">
+                    <h4 class="lux-text">Exquisite Dining</h4>
+                </div>
+                <div class="lux-col">
+                    <img src="images/diamond.png" class="lux-img" alt="">
+                    <h4 class="lux-text">Serene Retreat</h4>
+                </div>
+                <div class="lux-col">
+                    <img src="images/diamond.png" class="lux-img" alt="">
+                    <h4 class="lux-text">Breathtaking Views</h4>
+                </div>
+                <div class="lux-col">
+                    <img src="images/diamond.png" class="lux-img" alt="">
+                    <h4 class="lux-text">Impeccable Service</h4>
+                </div>
+                <div class="lux-col">
+                    <img src="images/diamond.png" class="lux-img" alt="">
+                    <h4 class="lux-text">Indulgent Comfort</h4>
+                </div>
+
+            </div>
+        </section>
+        <section id="get-in-touch" class="get-in-touch">
+            <div class="gt-text">
+                <h2>Get In Touch</h2>
+                <p>
+                    For inquiries or assistance, feel free to reach out to us. We are dedicated to ensuring your
+                    experience
+                    at The Opulent is seamless and extraordinary.
+                </p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="firstName">First name *</label>
+                            <input type="text" id="firstName" name="firstName" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last name *</label>
+                            <input type="text" id="lastName" name="lastName" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" />
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-cont">
+            <h3 style="font-size: 30px;">The Opulent on the First</h3>
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <ul class="foot-ul">
+                    <li class="foot-li"><a class="foot-a" href="#">123-45-78</a></li>
+                    <li class="foot-li"><a class="foot-a" href="#">info@mysite.com</a></li>
+                    <li class="foot-li"><a class="foot-a" href="#">500 Terry Francois Street, SF, CA 94158</a></li>
+                    <li class="foot-li"><a class="foot-a" href="#">Privacy Policy</a></li>
+                    <li class="foot-li"><a class="foot-a" href="#">Accessibility Statement </a></li>
+                </ul>
+            </div>
+            <p style="text-align: center;">© 2025 by The Opulent on the First. Powered and secured by <a
+                    href="https://github.com/muhammadamin1308">mshsacc</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
